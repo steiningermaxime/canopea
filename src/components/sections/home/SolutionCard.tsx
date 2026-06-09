@@ -6,7 +6,7 @@ import type { Solution } from '@/types';
 export function SolutionCard({ solution }: { solution: Solution }) {
   const { icon: Icon, title, desc, href } = solution;
   return (
-    <Card premium className="flex min-h-[320px] flex-col">
+    <Card premium className="flex h-full min-h-[320px] flex-col">
       <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-sm bg-sage text-brand-primary">
         <Icon className="h-7 w-7" />
       </div>

@@ -5,7 +5,7 @@ export function ProofCaseCard({ data }: { data: ProofCase }) {
   return (
     <a
       href="#"
-      className="flex flex-col overflow-hidden rounded-sm border border-line bg-cream no-underline transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md"
+      className="flex h-full flex-col overflow-hidden rounded-sm border border-line bg-cream no-underline transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md"
     >
       <div className="relative flex aspect-[4/3] items-end overflow-hidden bg-gradient-to-br from-sage via-forest-soft to-forest-deep p-5">
         <div aria-hidden className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.18),transparent_55%)]" />

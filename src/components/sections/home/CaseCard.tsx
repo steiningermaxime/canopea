@@ -5,7 +5,7 @@ import type { CaseStudy } from '@/types';
 
 export function CaseCard({ study }: { study: CaseStudy }) {
   return (
-    <Card as="article" className="flex flex-col rounded-md p-8">
+    <Card as="article" className="flex h-full flex-col rounded-md p-8">
       <div className="mb-4 text-body-sm font-medium uppercase tracking-wide text-forest-soft">
         {study.tag}
       </div>

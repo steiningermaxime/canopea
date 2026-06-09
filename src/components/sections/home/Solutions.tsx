@@ -17,7 +17,7 @@ export function Solutions() {
       </FadeIn>
       <Stagger className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {homeSolutions.map((s) => (
-          <StaggerItem key={s.title}>
+          <StaggerItem key={s.title} className="h-full">
             <SolutionCard solution={s} />
           </StaggerItem>
         ))}

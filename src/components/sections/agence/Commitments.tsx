@@ -22,8 +22,8 @@ export function Commitments() {
 
       <Stagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {commitments.map(({ num, icon: Icon, title, desc, footLabel, footValue }) => (
-          <StaggerItem key={num}>
-            <article className="flex min-h-[460px] flex-col gap-6 rounded-sm border border-line bg-cream p-10">
+          <StaggerItem key={num} className="h-full">
+            <article className="flex h-full min-h-[460px] flex-col gap-6 rounded-sm border border-line bg-cream p-10 transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-1 hover:shadow-sm">
               <div className="flex items-start justify-between">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-sage text-brand-primary">
                   <Icon className="h-7 w-7" />

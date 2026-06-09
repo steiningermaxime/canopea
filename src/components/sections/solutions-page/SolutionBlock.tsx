@@ -15,13 +15,13 @@ export function SolutionBlock({ data }: { data: SolutionBlockData }) {
           <div className={`eyebrow mb-6 ${dark ? 'text-sage' : ''}`}>{data.num}</div>
           <span
             className={
-              'mb-7 inline-flex h-9 items-center gap-2.5 rounded-full px-[18px] text-body-sm font-medium tracking-wide ' +
+              'mb-7 inline-flex max-w-[42ch] items-start gap-3 rounded-2xl px-5 py-3 text-body-sm font-medium leading-relaxed tracking-wide ' +
               (dark
                 ? 'border border-sage/30 bg-sage/[0.18] text-sage'
                 : 'bg-sage text-brand-primary')
             }
           >
-            <span className={`h-1.5 w-1.5 rounded-full ${dark ? 'bg-sage' : 'bg-brand-primary'}`} />
+            <span className={`mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full ${dark ? 'bg-sage' : 'bg-brand-primary'}`} />
             {data.persona}
           </span>
           <h2 className="mb-6 text-balance text-[40px] font-bold leading-none tracking-tighter md:text-heading-xl">
@@ -42,16 +42,14 @@ export function SolutionBlock({ data }: { data: SolutionBlockData }) {
             ))}
           </ul>
           {data.price ? (
-            <div className="mt-4 grid grid-cols-1 items-end gap-8 rounded-sm border border-line bg-cream p-8 sm:grid-cols-[1.4fr_1fr]">
-              <div>
-                <div className="text-[11px] font-medium uppercase tracking-widest text-ink opacity-70">{data.price.label}</div>
-                <div className="mt-2 text-[64px] font-bold leading-none tracking-tighter text-brand-primary">
-                  {data.price.num}
-                  <span className="ml-1.5 text-[28px] font-medium text-ink">{data.price.unit}</span>
-                </div>
-                <div className="mt-2.5 text-body-sm text-ink opacity-75">{data.price.delay}</div>
+            <div className="mt-4 rounded-sm border border-line bg-cream p-8">
+              <div className="text-[11px] font-medium uppercase tracking-widest text-ink opacity-70">{data.price.label}</div>
+              <div className="mt-2 whitespace-nowrap text-[64px] font-bold leading-none tracking-tighter text-brand-primary">
+                {data.price.num}
+                <span className="ml-1.5 text-[28px] font-medium text-ink">{data.price.unit}</span>
               </div>
-              <Button variant="primary" withArrow className="w-full">{data.ctaLabel}</Button>
+              <div className="mt-2.5 text-body-sm text-ink opacity-75">{data.price.delay}</div>
+              <Button variant="primary" withArrow className="mt-7 w-full whitespace-nowrap sm:w-auto">{data.ctaLabel}</Button>
             </div>
           ) : (
             <div className="flex flex-wrap items-center gap-6">
