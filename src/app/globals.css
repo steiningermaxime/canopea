@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-brand-surface text-brand-primary font-sans text-body-md leading-relaxed;
+  }
+  ::selection {
+    @apply bg-sage text-brand-primary;
+  }
+  :where(button, a, input, textarea, select, [tabindex]):focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-sage;
+  }
+}
+
+@layer components {
+  /* Largeur de contenu canonique : 1280px, gouttières responsives */
+  .container-canopea {
+    @apply mx-auto w-full max-w-container-xl px-6 sm:px-12 lg:px-24;
+  }
+  /* Eyebrow : libellé majuscule tracké, précédé d'un trait */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-body-sm font-medium uppercase tracking-widest;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-current opacity-50;
+  }
+}
+
+@layer components {
+  /* Hero — macro feuillage masqué (forme organique) */
+  .hero-foliage {
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 35% 45%, #000 60%, transparent 75%);
+    mask-image: radial-gradient(ellipse 70% 80% at 35% 45%, #000 60%, transparent 75%);
+  }
+  .hero-foliage-img {
+    filter: saturate(0.85) brightness(0.95);
+    clip-path: path('M360 0 C 540 30, 700 160, 720 360 C 740 540, 600 700, 380 720 C 180 740, 30 600, 0 380 C -10 200, 130 30, 360 0 Z');
+  }
+  /* Voile dégradé sur photo industrielle sombre */
+  .industry-veil {
+    background: linear-gradient(90deg, rgba(4, 50, 34, 0.92) 0%, rgba(4, 50, 34, 0.75) 60%, rgba(4, 50, 34, 0.5) 100%);
+  }
+  /* Halo radial décoratif (CTA finale) */
+  .glow-radial {
+    background: radial-gradient(circle at 40% 40%, rgba(218, 226, 203, 0.12), transparent 70%);
+  }
+  /* Illustration hero « Nos Solutions » — feuillage abstrait masqué */
+  .hero-illu-solutions {
+    background:
+      radial-gradient(120% 80% at 30% 20%, rgba(218, 226, 203, 0.55) 0%, transparent 60%),
+      radial-gradient(80% 60% at 80% 90%, rgba(4, 50, 34, 0.35) 0%, transparent 70%),
+      linear-gradient(140deg, #2f4a37 0%, #1a3527 50%, #0a2218 100%);
+  }
+}
+
+@layer components {
+  /* Fiche dispositif — dégradé lumineux du hero */
+  .fiche-hero-gradient {
+    background: linear-gradient(180deg, #fffcf7 0%, #f6e9d9 100%);
+  }
+  /* Maquette portable décorative (placeholder) */
+  .fiche-laptop {
+    filter: drop-shadow(0 30px 60px rgba(4, 50, 34, 0.18));
+  }
+  .fiche-laptop-base {
+    background: linear-gradient(180deg, #d5d4d2 0%, #b6b5b3 60%, #8e8d8b 100%);
+  }
+  .fiche-mock-photo {
+    background:
+      radial-gradient(circle at 20% 30%, rgba(218, 226, 203, 0.4) 0%, transparent 40%),
+      radial-gradient(circle at 70% 60%, rgba(218, 226, 203, 0.25) 0%, transparent 50%),
+      linear-gradient(135deg, #2a4838 0%, #43614f 100%);
+  }
+  /* Vignettes de cas clients (placeholders palette de marque) */
+  .fiche-case-thumb-1 {
+    background: #2a4838;
+  }
+  .fiche-case-thumb-2 {
+    background: #1f2d28;
+  }
+  .fiche-case-thumb-3 {
+    background: #4a5d3d;
+  }
+}
+
+@layer components {
+  /* Cadre portrait — vignette radiale sur les panneaux photo (page Agence) */
+  .frame-portrait {
+    position: relative;
+    overflow: hidden;
+  }
+  .frame-portrait::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(120% 80% at 50% 110%, rgba(4, 50, 34, 0.55), transparent 60%),
+      radial-gradient(60% 40% at 30% 20%, rgba(255, 252, 247, 0.1), transparent 70%);
+  }
+}
+
+@layer components {
+  /* Contact — mini-carte décorative (panneau Sauge) */
+  .contact-map {
+    background: linear-gradient(135deg, #dae2cb 0%, #c9d4b6 100%);
+  }
+  /* Contact — vignette équipe (placeholder palette de marque) */
+  .contact-team {
+    background:
+      radial-gradient(circle at 30% 20%, rgba(218, 226, 203, 0.3) 0%, transparent 50%),
+      linear-gradient(160deg, #2a4838 0%, #0a2218 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* Neutralise les états cachés inline de Framer Motion : le contenu reste visible, sans mouvement */
+  [style*='opacity:0'],
+  [style*='opacity: 0'] {
+    opacity: 1 !important;
+  }
+  [style*='translateY'],
+  [style*='translateX'] {
+    transform: none !important;
+  }
+}
