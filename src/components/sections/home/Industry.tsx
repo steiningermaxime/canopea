@@ -39,7 +39,7 @@ export function Industry() {
             </div>
             {industryStats.map((s) => (
               <div key={s.label} className="mb-8">
-                <div className="text-[64px] font-bold leading-none tracking-tighter">
+                <div className="text-[clamp(38px,8vw,64px)] font-bold leading-none tracking-tighter">
                   {s.num}
                   {s.suffix && <span className="text-heading-md">{s.suffix}</span>}
                 </div>

@@ -35,7 +35,7 @@ export function CaseCard({ entry, dimmed }: CaseCardProps) {
       </div>
 
       <div className="flex items-baseline gap-4 border-t border-line pb-1 pt-4">
-        <div className="shrink-0 text-[80px] font-bold leading-[0.9] tracking-tighter text-brand-primary">
+        <div className="shrink-0 text-[clamp(42px,9vw,80px)] font-bold leading-[0.9] tracking-tighter text-brand-primary">
           {entry.kpi.num}
           {entry.kpi.suffix && <sup className="ml-1 align-top text-[0.5em] font-medium leading-none">{entry.kpi.suffix}</sup>}
         </div>

@@ -11,7 +11,7 @@ export function DureeBudget() {
             <div className="mb-4 text-caption font-medium uppercase tracking-widest text-ink/60">
               Durée
             </div>
-            <div className="mb-4 text-[80px] font-bold leading-none tracking-tighter">4 mois</div>
+            <div className="mb-4 text-[clamp(42px,8.5vw,80px)] font-bold leading-none tracking-tighter">4 mois</div>
             <div className="text-body-md leading-relaxed text-ink">
               Du brief initial à la mise en ligne. Calendrier verrouillé en kick-off, jalons toutes
               les deux semaines.
@@ -21,7 +21,7 @@ export function DureeBudget() {
             <div className="mb-4 text-caption font-medium uppercase tracking-widest text-sage">
               Budget indicatif
             </div>
-            <div className="mb-4 text-[80px] font-bold leading-none tracking-tighter">
+            <div className="mb-4 text-[clamp(42px,8.5vw,80px)] font-bold leading-none tracking-tighter">
               10 — 18
               <span className="ml-2 text-[0.6em] tracking-normal opacity-85">k€ HT</span>
             </div>

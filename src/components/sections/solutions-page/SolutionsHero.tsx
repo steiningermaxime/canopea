@@ -13,7 +13,7 @@ export function SolutionsHero() {
           <AnimatedText
             as="h1"
             immediate
-            className="mb-10 text-balance text-[56px] font-bold leading-[1.02] tracking-tighter md:text-[88px]"
+            className="mb-10 text-balance text-[clamp(34px,7.7vw,88px)] font-bold leading-[1.02] tracking-tighter"
           >
             Quatre objectifs business.
             <br />

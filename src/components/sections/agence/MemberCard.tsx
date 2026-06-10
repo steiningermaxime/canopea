@@ -39,7 +39,7 @@ export function MemberCard({ member }: { member: AgenceMember }) {
         <span className="text-body-sm font-medium uppercase tracking-widest text-brand-primary/50">{member.index}</span>
         <span className="text-body-sm font-medium uppercase tracking-widest">{member.role}</span>
       </div>
-      <h3 className="mb-2 text-[48px] font-bold leading-none tracking-tighter md:text-[56px]">{member.name}</h3>
+      <h3 className="mb-2 text-[clamp(30px,6.5vw,56px)] font-bold leading-none tracking-tighter">{member.name}</h3>
       <div className="mb-8 text-body-lg font-medium text-brand-primary/70">{member.subtitle}</div>
       <p className="mb-6 max-w-[60ch] text-[18px] leading-relaxed text-ink">{member.bio}</p>
       <div className="mb-8 border-t border-brand-primary/10 pt-6">

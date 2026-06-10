@@ -6,7 +6,7 @@ export function TestimonialBig() {
   return (
     <section className="relative bg-forest-deepest py-32 text-brand-surface md:py-40">
       <div className="container-canopea relative">
-        <div aria-hidden className="absolute -top-5 left-6 text-[220px] leading-[0.7] text-sage/90 sm:left-12 lg:left-24">
+        <div aria-hidden className="absolute -top-5 left-6 text-[clamp(110px,26vw,220px)] leading-[0.7] text-sage/90 sm:left-12 lg:left-24">
           “
         </div>
         <div className="grid grid-cols-1 items-end gap-16 lg:grid-cols-[1.4fr_1fr] lg:gap-24">

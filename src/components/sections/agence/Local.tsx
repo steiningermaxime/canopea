@@ -15,7 +15,7 @@ export function Local() {
       <FadeIn className="mb-16 grid items-end gap-16 lg:grid-cols-[1.4fr_1fr] lg:gap-24">
         <div>
           <Eyebrow className="mb-6">Le local · 12 rue de la République, Aulnoye-Aymeries</Eyebrow>
-          <AnimatedText as="h2" className="text-[56px] font-bold leading-[0.95] tracking-tighter md:text-display-md">
+          <AnimatedText as="h2" className="text-[clamp(32px,6vw,56px)] font-bold leading-[0.95] tracking-tighter md:text-display-md">
             Venez<br />nous voir.<br />
             <span className="text-brand-primary/50">On a une cafetière<br />qui marche.</span>
           </AnimatedText>

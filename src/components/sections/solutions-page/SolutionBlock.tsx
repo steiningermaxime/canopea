@@ -44,7 +44,7 @@ export function SolutionBlock({ data }: { data: SolutionBlockData }) {
           {data.price ? (
             <div className="mt-4 rounded-sm border border-line bg-cream p-8">
               <div className="text-[11px] font-medium uppercase tracking-widest text-ink opacity-70">{data.price.label}</div>
-              <div className="mt-2 whitespace-nowrap text-[64px] font-bold leading-none tracking-tighter text-brand-primary">
+              <div className="mt-2 whitespace-nowrap text-[clamp(40px,8vw,64px)] font-bold leading-none tracking-tighter text-brand-primary">
                 {data.price.num}
                 <span className="ml-1.5 text-[28px] font-medium text-ink">{data.price.unit}</span>
               </div>

@@ -10,7 +10,7 @@ export function CasesHero() {
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.5fr_1fr]">
         <FadeIn immediate>
           <Eyebrow className="mb-8 text-forest-soft">Études de Cas · B2B Industrie</Eyebrow>
-          <AnimatedText as="h1" immediate className="mt-4 mb-12 text-[84px] font-bold leading-none tracking-tighter">
+          <AnimatedText as="h1" immediate className="mt-4 mb-12 text-[clamp(33px,7.4vw,84px)] font-bold leading-none tracking-tighter">
             Des cas concrets.
             <br />
             Des résultats mesurables.

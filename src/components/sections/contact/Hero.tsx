@@ -13,7 +13,7 @@ export function Hero() {
           <AnimatedText
             as="h1"
             immediate
-            className="mt-4 text-[56px] font-bold leading-[0.95] tracking-tight sm:text-[72px] lg:text-[88px]"
+            className="mt-4 text-[clamp(32px,7.7vw,88px)] font-bold leading-[0.95] tracking-tight"
           >
             Parlons de
             <br />

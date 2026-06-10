@@ -10,7 +10,7 @@ export function KpiBand() {
       <Stagger className="grid grid-cols-1 gap-12 md:grid-cols-3">
         {fsKpis.map((k) => (
           <StaggerItem key={k.label}>
-            <div className="text-[80px] font-bold leading-none tracking-tighter md:text-[96px]">
+            <div className="text-[clamp(48px,10vw,96px)] font-bold leading-none tracking-tighter">
               {k.num}
               <span className="text-heading-lg">{k.suffix}</span>
             </div>

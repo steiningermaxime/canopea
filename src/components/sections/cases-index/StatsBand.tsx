@@ -16,7 +16,7 @@ export function StatsBand() {
             key={s.label}
             className="md:px-8 md:first:pl-0 md:last:pr-0 md:[&+&]:border-l md:[&+&]:border-sage/40"
           >
-            <div className="mb-4 text-[120px] font-bold leading-[0.95] tracking-tighter text-sage">
+            <div className="mb-4 text-[clamp(54px,12vw,120px)] font-bold leading-[0.95] tracking-tighter text-sage">
               {s.num}
               {s.suffix && <sup className="ml-1 align-top text-[0.45em] font-medium leading-none">{s.suffix}</sup>}
             </div>

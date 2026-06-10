@@ -9,7 +9,7 @@ export function Vision() {
     <Section tone="dark" size="phare">
       <FadeIn className="mb-16 grid items-start gap-16 lg:grid-cols-[1fr_1.6fr] lg:gap-24">
         <Eyebrow className="text-sage">Notre vision</Eyebrow>
-        <AnimatedText as="h2" className="max-w-[14ch] text-[56px] font-bold leading-none tracking-tighter md:text-display-md">
+        <AnimatedText as="h2" className="max-w-[14ch] text-[clamp(32px,6vw,56px)] font-bold leading-none tracking-tighter md:text-display-md">
           Pourquoi on fait ce métier.
         </AnimatedText>
       </FadeIn>

@@ -20,7 +20,7 @@ export function LeProbleme() {
       </FadeIn>
       <div className="grid grid-cols-1 items-start gap-24 lg:grid-cols-2">
         <FadeIn className="relative border-l-[3px] border-sage pl-8">
-          <span aria-hidden className="absolute -top-5 left-3 text-[120px] font-bold leading-[0.8] text-sage/40">
+          <span aria-hidden className="absolute -top-5 left-3 text-[clamp(64px,13vw,120px)] font-bold leading-[0.8] text-sage/40">
             “
           </span>
           <p className="mb-8 text-heading-md font-medium italic leading-[1.25] tracking-tight text-brand-surface">

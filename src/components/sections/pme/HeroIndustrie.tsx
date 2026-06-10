@@ -11,7 +11,7 @@ export function HeroIndustrie() {
       <div className="container-canopea relative z-10 grid grid-cols-1 items-end gap-16 lg:grid-cols-[1.5fr_1fr]">
         <FadeIn immediate>
           <Eyebrow className="mb-8 text-sage">Pôle Industrie</Eyebrow>
-          <AnimatedText as="h1" immediate className="mb-10 max-w-[14ch] text-[56px] font-bold leading-[0.98] tracking-tighter md:text-[88px]">
+          <AnimatedText as="h1" immediate className="mb-10 max-w-[14ch] text-[clamp(33px,7.7vw,88px)] font-bold leading-[0.98] tracking-tighter">
             Pour les PME industrielles qui veulent peser au niveau national.
           </AnimatedText>
           <p className="mb-12 max-w-[52ch] text-body-lg leading-relaxed text-brand-surface/80">
@@ -24,7 +24,7 @@ export function HeroIndustrie() {
           <div className="mt-24 grid grid-cols-1 gap-12 sm:grid-cols-3">
             {heroStats.map((s) => (
               <div key={s.label}>
-                <div className="text-[56px] font-bold leading-none tracking-tighter">
+                <div className="text-[clamp(34px,6.8vw,56px)] font-bold leading-none tracking-tighter">
                   {s.num}{s.suffix && <span className="text-[0.5em]">{s.suffix}</span>}
                 </div>
                 <div className="mt-2 max-w-[20ch] text-body-sm leading-snug text-brand-surface/65">{s.label}</div>

@@ -12,7 +12,7 @@ export function Hero() {
       <div className="grid items-end gap-16 lg:grid-cols-[1.4fr_1fr] lg:gap-24">
         <FadeIn immediate>
           <Eyebrow className="mb-6">Notre agence · Aulnoye-Aymeries · depuis 2017</Eyebrow>
-          <AnimatedText as="h1" immediate className="mb-8 text-[56px] font-bold leading-none tracking-tighter md:text-[72px]">
+          <AnimatedText as="h1" immediate className="mb-8 text-[clamp(32px,6.3vw,72px)] font-bold leading-none tracking-tighter">
             Une agence<br />à taille humaine.<br />
             <span className="text-brand-primary/55">Une exigence<br />à taille industrielle.</span>
           </AnimatedText>
@@ -30,7 +30,7 @@ export function Hero() {
           <Stagger immediate className="flex flex-col">
             {heroKpis.map((k) => (
               <StaggerItem key={k.label} className="border-t border-brand-primary/15 py-6 first:border-t-0">
-                <div className="text-[64px] font-bold leading-none tracking-tighter md:text-[96px]">
+                <div className="text-[clamp(38px,8vw,96px)] font-bold leading-none tracking-tighter">
                   {k.num}
                   {k.suffix && <span className="text-[0.5em]">{k.suffix}</span>}
                 </div>

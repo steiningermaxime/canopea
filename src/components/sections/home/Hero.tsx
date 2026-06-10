@@ -33,7 +33,7 @@ export function Hero() {
           </motion.span>
           <motion.h1
             variants={heroItem}
-            className="mb-8 max-w-[14ch] text-[56px] font-bold leading-[0.98] tracking-tighter text-brand-primary sm:text-[72px] lg:text-[92px]"
+            className="mb-8 max-w-[14ch] text-[clamp(34px,8vw,92px)] font-bold leading-[0.98] tracking-tighter text-brand-primary"
           >
             Votre partenaire stratégique pour passer un cap.
           </motion.h1>
